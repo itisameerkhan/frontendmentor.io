@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+    <header>
+      <div class="header-container">
+        <div class="logo-header-container">
+          <img src="/images/logo.svg" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="profile-container">
+        <div class="cart-container-main">
+          <span class="material-symbols-outlined icon-cart">shopping_cart</span>
+        <div class="cart-container">
+          <div class="cart">
+            <h3>Cart</h3>
+          </div>
+          <div class="cart-description">
+            <h3 id="empty-message">your cart is empty</h3>
+            <div id="cart-details-container">
+              <div class="cart-details">
+                <img src="/images/image-product-1-thumbnail.jpg" alt="" style="height: 60px;width: auto;border-radius: 5px;">
+                <div class="cart-total-details">
+                  <p style="color:gray">Fall Limited Edition Sneakers</p>
+                  <p id="total-details" style="margin: -10px;color:gray;padding-left:10px;">$125.00 × 7 <strong id="strong-price">$875</strong></p>
+                </div>
+                <span class="material-symbols-outlined" id="delete-button" style="cursor: pointer;">delete</span>
+              </div>
+              <div class="check-out">
+                <button>Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <img src="/images/image-avatar.png" alt="" class="profile-photo">
+      </div>
+    </header>
+    <main>
+      <div class="product-container">
+        <div class="product-container-thumbnail">
+          <img src="/images/image-product-1.jpg" alt="" id="cart-container-image">
+        </div>
+        <div class="product-container-showcase">
+          <img src="/images/image-product-1.jpg" alt="" id="product-img-1" class="product-image selected-image">
+          <img src="/images/image-product-2.jpg" alt="" id="product-img-2" class="product-image">
+          <img src="/images/image-product-3.jpg" alt="" id="product-img-3" class="product-image">
+          <img src="/images/image-product-4.jpg" alt="" id="product-img-4" class="product-image">
+        </div>
+      </div>
+      <div class="product-description">
+        <p class="sneaker-desc">sneaker company</p>
+        <h1 class="product-description-title">Fall Limited Edition Sneakers</h1>
+        <p class="product-description-content">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price-container">
+          <span id="price-1">$120.00</span>
+          <span id="offer">50%</span>
+        </div>
+        <p id="price-2">$250.00</p>
+        <div class="product-description-button">
+          <div class="range-button">
+            <span class="material-symbols-outlined" style="color:#FF7D55;cursor: pointer;font-weight: bolder;" id="remove-button">remove</span>
+            <span id="range-number">0</span>
+            <span class="material-symbols-outlined" style="color:#FF7D55;cursor: pointer;font-weight: bolder" id="add-button">add</span>
+          </div>
+          <button id="add-to-cart">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </main>
+  <div class="attribution" style="text-align: center;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ameerkhan123ak" target="_blank">Ameer Khan B</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+body 
+{
+    background-color: #dce8f4;
+    color:white;
+    display: grid;
+    height:100vh;
+    place-items: center;
+}
+.container 
+{
+    height:85vh;
+    width:80vw;
+    display: grid;
+    box-sizing: border-box;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 270px 270px;
+    grid-template-areas: "card1 card1 card2 card3"
+                         "card4 card5 card5 card3"
+}
+.card
+{
+    width: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:20px;
+}
+.card-user 
+{
+    display: inline-block;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.card-user > .name 
+{
+    font-size: 15px;
+}
+.card-user > .title 
+{
+    font-size: 15px;
+    opacity: 0.8;
+    position: relative;
+    bottom:12px;
+}
+.card .card-heading 
+{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bolder;
+}
+.card > .card-details 
+{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.card-1
+{
+    grid-area: card1;
+    display: grid;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-color: #7541c8;
+}
+img 
+{
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.card-2
+{
+    grid-area: card2;
+    background-color: #48556a;
+}
+.card-3
+{
+    grid-area: card3;
+    background-color: white;
+    color:#48556a;
+}
+.card-3 > .card-user 
+{
+    color:black;
+}
+.card-4
+{
+    grid-area: card4;
+    background-color: white;
+    color:#48556a;
+}
+.card-4 > .card-head > .card-user
+{
+    color: black;
+}
+.card-5
+{
+    grid-area: card5;
+    background-color: #19212e;
+}
+@media (max-width:1250px)
+{
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

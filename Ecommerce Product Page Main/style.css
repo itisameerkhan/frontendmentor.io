@@ -1,0 +1,264 @@
+*
+{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin:0 250px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+.header-container 
+{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.header-container nav ul 
+{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    gap: 20px;
+}
+.header-container nav ul li 
+{
+    cursor: pointer;
+    border-bottom: 4px solid white;
+    transition: all 200ms ease-in-out;
+}
+.header-container nav ul li:hover 
+{
+    border-bottom: 4px solid orange;
+}
+.profile-container 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.profile-container .icon-cart
+{
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+.profile-container .icon-cart:hover 
+{
+    color:black;
+}
+.profile-container .profile-photo 
+{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.profile-container .cart-container
+{
+    height: 10px;
+    width: 370px;
+    position: absolute;
+    top:60px;
+    left:-160px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px gray;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.profile-container .cart-container .cart 
+{
+    border-bottom: 2px solid gray;
+}
+.profile-container .cart-container .cart h3 
+{
+    padding-left:20px;
+}
+.profile-container .cart-container .cart-description h3 
+{
+    text-align: center;
+    color:gray;
+}
+main
+{
+    margin:70px 250px;
+    display: flex;
+}
+main .product-container 
+{
+    padding:20px;
+}
+main .product-container .product-container-thumbnail img 
+{
+    height: 425px;
+    width: 425px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: all 200ms ease-in-out;
+}
+main .product-container .product-container-showcase
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.product-container .product-container-showcase img 
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.product-container .product-image-selected
+{
+    border:5px solid orange;
+    opacity: 0.6;
+}
+.product-container .selected-image
+{
+    border:5px solid orange;
+    opacity: 0.6;
+}
+.animation-image 
+{
+    animation:rotate 1000ms;
+}
+@keyframes rotate 
+{
+    from 
+    {
+        transform: rotate(180deg) scale(0);
+    }
+}
+.product-description 
+{
+    display: flex;
+    flex-direction: column;
+    padding:50px 10px;
+}
+.product-description .sneaker-desc
+{
+    color:#FF9646;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.product-description .product-description-title
+{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+.product-description .product-description-content
+{
+    font-size: 17px;
+    padding-right: 30px;
+    line-height: 25px;
+    color:gray;
+}
+.product-description .price-container
+{
+    display: flex;
+    align-items: center;
+}
+.product-description .price-container #price-1
+{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+.product-description .price-container #offer
+{
+    background-color:#FFEDE0;
+    padding:8px;
+    font-weight: bold;
+    color:#FF9646;
+}
+.product-description #price-2
+{
+    font-size: 20px;
+    color: gray;
+    text-decoration: line-through;
+    margin-top: 10px;
+    padding: 0;
+}
+.product-description .product-description-button
+{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.product-description .product-description-button .range-button
+{
+    height: 50px;
+    width: 150px;
+    background-color: #e4dfdf;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-description #add-to-cart 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+    width: 250px;
+    background-color: #FF9646;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px gray;
+}
+.product-description #add-to-cart:hover 
+{
+    background-color: #e36e13;
+}
+.cart-description .cart-details 
+{
+    padding:20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cart-description .check-out
+{
+    padding:10px;
+}
+.cart-description .check-out button 
+{
+    width: 100%;
+    height: 50px;
+    background-color: #FF9646;
+    font-size: 20px;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+}
+.cart-description .check-out button:hover 
+{
+    background-color: #e36e13;
+}
+.cart-total-details
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+}
+#cart-details-container 
+{
+    visibility: hidden;
+}

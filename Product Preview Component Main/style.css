@@ -1,0 +1,102 @@
+@font-face
+{
+    font-family: montserrat;
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face 
+{
+    font-family: frauncess;
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+body
+{
+    background-color: #f2ebe3;
+}
+img 
+{
+    float: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.page 
+{
+    position: absolute;
+    width: 100%;
+    margin:auto;
+}
+.content 
+{
+    position: absolute;
+    width: 570px;
+    margin:auto;
+    left:29%;
+    top:150px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px black;
+}
+.perfume 
+{
+    position: relative;
+    left:5%;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 19px;
+    opacity: 0.7;
+}
+.head 
+{
+    font-family: frauncess;
+    position:relative;
+    left:20px;
+}
+.para 
+{
+    font-family: montserrat;
+    color:gray;
+    position: relative;
+    left:20px;
+    line-height: 23px;
+}
+.amt1 
+{
+    font-family: frauncess;
+    position: relative;
+    left:20px;
+    color:rgb(60,128,103);
+}
+.amt2
+{
+    position: relative;
+    bottom: 47px;
+    left:160px;
+    font-family: montserrat;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.addtocart 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(60,128,103);
+    position: absolute;
+    top:70%;
+    left:52%;
+    padding:15px 60px;
+    padding-left:70px;
+    color:white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cart 
+{
+    color:white;
+    position: absolute;
+    top:74.5%;
+    left:55%;
+    z-index: 1;
+    cursor: pointer;
+}
+.addtocart:hover 
+{
+    box-shadow: 0px 0px 5px black;
+}

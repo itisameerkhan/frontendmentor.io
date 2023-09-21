@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+<script defer src="script.js"></script>
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title">Calc</h1>
+  <div class="theme-container">
+    <input type="radio" name="theme" checked value="0">
+    <input type="radio" name="theme" value="1">
+    <input type="radio" name="theme" value="2">
+  </div>
+    <div class="display">
+      <p id="display-1" data-calc="calc"></p>
+      <p id="display-2" data-result="result"></p>
+    </div>
+    <div class="button-container">
+      <button id="btn-7" data-number>7</button>
+      <button id="btn-8" data-number>8</button>
+      <button id="btn-9" data-number>9</button>
+      <button id="btn-del" data-operation="delete">DEL</button>
+      <button id="btn-4" data-number>4</button>
+      <button id="btn-5" data-number>5</button>
+      <button id="btn-6" data-number>6</button>
+      <button id="btn-add" data-operation="addition">+</button>
+      <button id="btn-1" data-number>1</button>
+      <button id="btn-2" data-number>2</button>
+      <button id="btn-3" data-number>3</button>
+      <button id="btn-sub" data-operation="subtraction">-</button>
+      <button id="btn-dot" data-number>.</button>
+      <button id="btn-0" data-number>0</button>
+      <button id="btn-div" data-operation="division">/</button>
+      <button id="btn-mul" data-operation="multiplication">x</button>
+      <button id="btn-reset" class="column-span" data-operation="reset">RESET</button>
+      <button id="btn-equ" class="column-span" data-operation="equals" >=</button>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

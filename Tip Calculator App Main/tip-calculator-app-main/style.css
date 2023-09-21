@@ -1,0 +1,238 @@
+body 
+{
+    background-color: #c5e4e7;
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+* 
+{
+    box-sizing: border-box;
+}
+.title 
+{
+    color:#00494d;
+    letter-spacing: 8px;
+}
+input 
+{
+    padding-left:10px;
+}
+.container 
+{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    padding:20px;
+    margin-bottom: 100px;
+    transition: all 200ms ease-in-out;
+}
+.bill-input-container
+{
+    border-radius: 20px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.bill-container
+{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#bill-label 
+{
+    opacity: 0.6;
+    position: relative;
+}
+#bill-input 
+{
+    font-family: 'Space Mono', monospace;
+    height: 40px;
+    color:#00494d;
+    border: #e6f4f4;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #e6f4f4;
+    padding-right: 10px;
+    border:1px solid white;
+    border-radius: 6px;
+}
+#icon-dollar 
+{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top:35px;
+    left:10px;
+}
+/**/
+.select-tip 
+{
+    display: flex;
+    flex-direction: column;
+}
+.select-tip p 
+{
+    opacity: 0.6;
+}
+.select-tip .btn-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.select-tip .btn-grid button 
+{
+    height: 50px;
+    font-family: 'Space Mono', monospace;
+    background-color: #00494d;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.select-tip .btn-grid input 
+{
+    border:1px solid white;
+    text-align: center;
+    color:#00494d;
+    background-color: #e6f4f4;
+    border-radius: 8px;
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    box-sizing: border-box;
+}
+.select-tip .btn-grid button:hover 
+{
+    background-color: #26c0ab;
+    color:#00494d;
+}
+.select-tip .btn-grid .active-button 
+{
+    background-color: #26c0ab;
+    color:#00494d;
+}
+.number-of-people 
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.number-of-people input 
+{
+    height: 40px;
+    border:1px solid white;
+    border-radius: 8px;
+    background-color: #e6f4f4;
+    padding-right: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color:#00494d;
+}
+#person-icon 
+{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top:35px;
+    left:10px;
+}
+.number-of-people input:focus 
+{
+    outline: none;
+    border:1px solid #094840;;  
+}
+#bill-input:focus
+{
+    outline: none;
+    border:1px solid #094840;
+}
+.select-tip .btn-grid input:focus 
+{
+    outline: none;
+    border:1px solid #094840;
+}
+/*right side*/
+.tip-details 
+{
+    background-color:#00494d;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 20px;
+    margin:10px;
+    padding:20px;
+}
+.tip-details .tip-amount-container 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.tip-amount-container .span-tip-amount 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tip-amount-container .span-tip-amount p 
+{
+    line-height: 20px;
+    margin: 0;
+}
+.tip-amount-container #tip-amount-h2 
+{
+    font-size: 30px;
+    color:#26c0ab;
+}
+.total-container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.total-container .inner-total-p 
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.inner-total-p p 
+{
+    margin: 0;
+}
+.total-container #total-amount-h2 
+{
+    font-size: 30px;
+    color:#26c0ab;
+}
+.container #reset 
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border:none;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 5px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.container #reset:hover 
+{
+    opacity: 0.9;
+}
+@media all and (max-width:800px) 
+{
+    .container 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
