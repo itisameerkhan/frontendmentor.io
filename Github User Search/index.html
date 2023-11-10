@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/25b9223bba.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>devfinder</p>
+        </header>
+        <div class="search">
+            <img src="/assests/icon-search.svg" alt="" style="margin-right: 20px;">
+            <input type="text" placeholder="Search GitHub username..." id="github-search">
+            <div id="error-display">Invalid Field</div>
+            <button id="search-btn">Search</button>
+        </div>
+        <main>
+            <div class="img-container">
+                <img src="" alt="" id="profile-pic">
+            </div>
+            <div class="user-container">
+                <div class="user-details">
+                    <div class="user-name">
+                        <p id="name"></p>
+                        <p id="username"></p>
+                    </div>
+                    <div class="joined-container">
+                        <p id="joined"></p>
+                    </div>
+                </div>
+                <div class="bio-container">
+                    <p id="bio-details"></p>
+                </div>
+                <div class="stats-container">
+                    <ul>
+                        <li>
+                            <p>Repos</p>
+                            <h2 id="repos-count" style="text-align: center;"></h2>
+                        </li>
+                        <li>
+                            <p>Followers</p>
+                            <h2 id="follower-count" style="text-align: center;"></h2>
+                        </li>
+                        <li>
+                            <p>Following</p>
+                            <h2 id="following-count" style="text-align: center;"></h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="userlink-container">
+                    <div class="location-container link-container">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p id="location">Tenkasi</p>
+                    </div>
+                    <div class="twitter-container link-container">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p id="twitter"></p>
+                    </div>
+                    <div class="website-container link-container">
+                        <i class="fa-solid fa-link"></i>
+                        <p id="website-link"></p>
+                    </div>
+                    <div class="github-link link-container">
+                        <i class="fa-solid fa-building"></i>
+                        <p id="company"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

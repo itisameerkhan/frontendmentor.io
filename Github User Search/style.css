@@ -1,0 +1,189 @@
+body 
+{
+    background-color: #141d2f;
+    color:white;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+* 
+{
+    box-sizing:border-box;
+}
+.container 
+{
+    display: flex;
+    height: 80vh;
+    width: 50%;
+    flex-direction: column;
+}
+header 
+{
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+header .button
+{
+    display:flex;
+    align-items: center;
+}
+header button 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent;
+    border:none;
+    color:white;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.search 
+{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a47;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.search input 
+{
+    background-color: transparent;
+    color:white;
+    height: 6vh;
+    width: 70%;
+    border:none;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 100;
+    margin:5px;
+    padding-left:10px;
+    letter-spacing: 2px;
+}
+.search input:focus 
+{
+    outline:none;
+    border-style: dotted;
+}
+.search #error-display
+{
+    visibility: hidden;
+    height: 6vh;
+    width: 25%;
+    margin:5px;
+    display: grid;
+    place-items: center;
+    font-family: 'Space Mono', monospace;
+    color:red;
+}
+.search > button 
+{
+    height: 6vh;
+    width: 17%;
+    margin:5px;
+    background-color: #0079ff;
+    color:white;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.search > button:hover 
+{
+    background-color: #2c8cf9;
+}
+main 
+{
+    background-color: #1e2a47;
+    height: 100vh;
+    border-radius: 20px;
+    display: flex;
+}
+main .img-container
+{
+    padding:25px;
+    width: 20%;
+}
+main .img-container img 
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+main .user-container 
+{
+    width: 80%;
+    font-family: 'Space Mono', monospace;
+}
+main .user-container .user-details 
+{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+main .user-container .user-details #name 
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+#username
+{
+    font-size: 15px;
+    color:#0079ff;
+    letter-spacing: 1px;
+    margin: 0;
+} 
+main .bio-container 
+{
+    padding-right:40px;
+    padding-left:25px;
+    margin:0;
+}
+main .stats-container 
+{
+    background-color: #141D2F;
+    color:white;
+    margin:10px;
+    border-radius: 20px;
+
+}
+main .stats-container ul 
+{
+    display: flex;
+    justify-content: space-around;
+    padding:0;
+    margin: 0;
+}
+main .stats-container li 
+{
+    list-style-type: none;
+}
+main .userlink-container 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+main .userlink-container .link-container 
+{
+    display:flex;
+    align-items: center;
+}
+main .userlink-container .link-container i 
+{
+    font-size: 25px;
+}
+main .userlink-container .link-container p 
+{
+    margin-left: 20px;
+    font-size: 15px;
+}
