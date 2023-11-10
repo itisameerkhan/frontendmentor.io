@@ -1,0 +1,45 @@
+body 
+{
+    background-color: #d6e2f0;
+    display: block;
+    position: relative;
+    min-height: 90vh;
+    height: auto;
+    top:120px;
+    left:40%;
+    width: 300px;
+}
+img 
+{
+    display: block;
+    position: relative;
+    padding:15px 20px 10px 15px;
+    border-radius: 30px;
+}
+.page 
+{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+@font-face
+{
+    font-family: outfit;
+    src: url(/qr-code-component-main/Outfit-VariableFont_wght.ttf);
+}
+.para1
+{
+    font-family: outfit;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    color:#1f3251;
+    padding:0px 10px 10px 10px;
+}
+.para2 
+{
+    font-family: outfit;
+    padding:0px 10px 10px 10px;
+    text-align: center;
+    color:#7b879d;
+}
