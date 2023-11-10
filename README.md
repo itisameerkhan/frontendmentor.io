@@ -38,9 +38,8 @@ The challenges in this repository are built using the following technologies:
 
 To run any of the challenges locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/frontend-mentor-challenges.git`
-2. Navigate to the challenge folder: `cd challenge-folder-name`
-3. Open the `index.html` file in your preferred web browser.
+1. Clone this repository: `git clone https://github.com/itisameerkhan/frontendmentor.io.git`
+2. Navigate to the challenge folder: `cd frontendmentor.io`
 
 ## Usage
 
@@ -71,6 +70,6 @@ If you have any questions, feedback, or suggestions, feel free to contact me:
 
 - Email: ameerkhan.ee20@bitsathy.ac.in
 - instagram: @khaan.ax
-- GitHub: [Ameer khan](github.com/ameerkhan123ak)
+- GitHub: [Ameer khan](github.com/itisameerkhan)
 - FrontEnd Mentor: [Ameer Khan](https://www.frontendmentor.io/profile/ameerkhan123ak)
 
