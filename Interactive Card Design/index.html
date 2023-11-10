@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="front-card">
+    <div class="circle">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </div>
+    <div class="details">
+      <h2 id="card-number">0000 0000 0000 0000</h2>
+      <div class="card-holder">
+        <p id="card-name">JANE APPLESEED</p>
+        <div class="expire-date">
+          <p id="display-mm">00</p>
+          <p>/</p>
+          <p id="display-yy">00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back-card">
+    <div id="cvv">000</div>
+  </div>
+  <div class="user-details">
+    <form id="form"> 
+      <div class="card-holdername">
+        <label for="card-holdername" id="cardholdername-label">Cardholder Name</label>
+        <input type="text" placeholder="e.g. Jane Appleseed" id="cardholdername">
+        <div id="error"></div>
+      </div>
+      <div class="card-number">
+        <label for="card-number">Card Number</label>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="input-cardnumber">
+        <div id="error"></div>
+      </div>
+      <div class="validation">
+        <div class="label-div">
+          <label for="expire-date">Exp. Date</label>
+          <label for="mmyy">(MM/YY)</label>
+          <label for="">CVV</label>
+        </div>
+        <div class="input-box">
+          <div class="input-1">
+            <input type="text" placeholder="MM" id="mm" minlength="2" maxlength="2">
+            <div id="error"></div>
+          </div>
+          <div class="input-2">
+            <input type="text" placeholder="YY" id="yy" minlength="2" maxlength="2">
+            <div id="error"></div>
+          </div>
+          <div class="input-3">
+            <input type="text" placeholder="e.g. 123" id="input-cvv" minlength="3" maxlength="3">
+            <div id="error"></div>
+          </div>
+        </div>
+      </div>
+      <button id="confirm" type="submit">Confirm</button>
+    </form>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js" defer></script>
+</body>
+</html>
