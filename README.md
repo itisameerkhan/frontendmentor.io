@@ -62,7 +62,7 @@ Please ensure that any changes you make align with the coding standards and best
 
 ## License
 
-[MIT License](LICENSE)
+No License
 
 ## Contact
 
